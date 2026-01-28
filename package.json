@@ -1,0 +1,30 @@
+{
+	"packageManager": "pnpm@9.1.2",
+	"name": "gouzi_ucn",
+	"version": "2.0.0",
+	"author": "JayXie",
+	"main": "build/src/index.js",
+	"type": "module",
+	"engines": {
+		"node": ">=20.11.1"
+	},
+	"scripts": {
+		"format": "prettier --write src/**/*.ts",
+		"lint": "eslint src/**/* --ext .ts",
+		"start": "node .",
+		"build": "tsc --build --clean && tsc"
+	},
+	"dependencies": {
+		"discord.js": "^14.15.3",
+		"fs": "0.0.1-security",
+		"mongoose": "^8.5.1"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.12",
+		"@typescript-eslint/eslint-plugin": "^7.17.0",
+		"@typescript-eslint/parser": "^7.17.0",
+		"eslint": "^9.8.0",
+		"prettier": "^3.3.3",
+		"typescript": "^5.5.4"
+	}
+}
